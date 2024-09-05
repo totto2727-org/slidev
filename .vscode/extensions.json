@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "vue.volar",
+    "dprint.dprint",
+    "antfu.slidev",
+    "sissel.netlify-redirects"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "template",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build --base /template/ --out ../../dist/template",
+    "export": "slidev export --dark --output ../../dist/pdf/template.pdf"
+  }
+}
