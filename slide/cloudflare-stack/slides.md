@@ -15,7 +15,7 @@ drawings:
 
 # Cloudflareを使い倒す!
 
-**とっと / :inline-img{src="/YUMEMI_yoko_WH_08.svg" alt="株式会社ゆめみ"}**{class="opacity-100"}
+**とっと / <inline-img src="/YUMEMI_yoko_WH_08.svg" alt="株式会社ゆめみ"/>**{class="opacity-100"}
 
 ---
 
