@@ -12,7 +12,7 @@
 }
 
 .cover h1 {
-  @apply text-6xl;
+  @apply text-6xl leading-[1.1];
 }
 
 .cover h1 + p {
