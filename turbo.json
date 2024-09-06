@@ -5,6 +5,7 @@
       "outputs": ["dist/**", "!dist/pdf/**"]
     },
     "export": {
+      "dependsOn": ["build"],
       "outputs": ["dist/pdf/**"]
     }
   }
