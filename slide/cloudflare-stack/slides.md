@@ -154,9 +154,9 @@ Cloudflare内のスタックで全て完結
 class: "m-1vw"
 ---
 
-## RPCモードのサンプルコード{class="text-center"}
+## RPCモードのサンプルコード{class="text-center mb-4"}
 
-::div{class="grid grid-cols-[auto_auto] gap-4"}
+::div{class="grid grid-cols-[auto_auto] gap-2 mt-0"}
 
 ```ts
 // worker1.ts
