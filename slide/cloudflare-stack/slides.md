@@ -94,7 +94,7 @@ drawings:
 
 ## Cloudflare Access認証画面{class="text-center"}
 
-![Cloudflare Accessの認証画面](./cloudflare-access.svg){class="h-100 object-contain mx-auto"}
+![Cloudflare Accessの認証画面](/cloudflare-access.png){class="h-100 object-contain mx-auto"}
 
 ---
 class: "h-100%"
