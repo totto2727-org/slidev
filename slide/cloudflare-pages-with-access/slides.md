@@ -79,7 +79,7 @@ drawings:
 
 ## Cloudflare Access
 
-- Cloudflareで管理しいるドメインに認証認可を追加する機能
+- Cloudflareで管理しているドメインに認証認可を追加する機能
   - IP制限、メール認証、SAML、OpenIDConnect etc...
 - 50名までは無料！
   - 個人開発や小規模なチームなら十分
