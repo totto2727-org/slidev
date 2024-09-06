@@ -40,43 +40,49 @@ drawings:
 
 ---
 
-## Webサイトを特定の人に向けて共有したい！
+## Webサイトを<br>特定の人にだけ共有したい！
 
 - 自分だけが使えればいい
-- 社内の一部にだけ公開したい
+- 社内外の一部にだけ公開したい
 
-などなど、特定範囲にだけWebサイトを共有するニーズは、常に一定存在していると思います
+でもBasic認証をアプリに実装したり、VPN前提のIP制限はちょっと...
 
 ---
 
-## そんなあなたに！
+## そんなあなたに！{.text-center}
 
-Cloudflare Pages + Cloudflare Accessという技術スタックがおすすめです
+::div{class="flex flex-col items-center text-center text-[3em] [&>*]-m-0"}
+
+**Cloudflare Pages**{.text-orange-300}
+
+\+
+
+**Cloudflare Access**{.text-orange-300}
+
+::
 
 ---
 
 ## Cloudflare Pages
 
-- Webアプリケーション（サイト）を専門とするPaaS
-- VercelやNetlify、Amplify Hosting相当のサービス
-- GitHub連携、CLI経由、Zipのアップロードなどデプロイ方法は色々
-- ブランチ単位でデプロイする機能もあるよ！
-- SSRしない限りは完全無料
+- Webアプリケーション（サイト）のホスティングサービス
+  - GitHub連携、CLI経由、Zipで簡単デプロイ
+  - ブランチプレビューもあり
+- 静的アセットの配信は完全無料！！！
   - SSRする場合も1000万アクセスぐらいまでは無料（2024/9/5）
 
-https://pages.cloudflare.com/
+<https://pages.cloudflare.com/>
 
-https://qiita.com/aki-y/items/900fdf0209357cb7b08e
+<https://qiita.com/aki-y/items/900fdf0209357cb7b08e>
 
 ---
 
 ## Cloudflare Access
 
-- Cloudflare ZeroTrustの1機能
-- Cloudflareでプロキシしているアプリケーションなどに様々なアクセス制限を追加できる
+- Cloudflareで管理しいるドメインに認証認可を追加する機能
   - IP制限、メール認証、SAML、OpenIDConnect etc...
 - 50名までは無料！
-  - 小規模なチームなら十分
+  - 個人開発や小規模なチームなら十分
 
 https://www.cloudflare.com/ja-jp/zero-trust/products/access/
 
@@ -84,7 +90,7 @@ https://dev.classmethod.jp/articles/cloudflareaccess-ztna/
 
 ---
 
-## 手順
+## 認証認可の設定手順
 
 1. Cloudflare Pagesにデプロイ
 1. Pagesプロジェクトの設定からアクセス制限を有効にする
@@ -93,11 +99,10 @@ https://dev.classmethod.jp/articles/cloudflareaccess-ztna/
 
 ---
 
-## 認証掛けられるとどうなる？{.text-center}
+## 認証画面{.text-center}
 
 ::div{.flex.flex-col.items-center.text-center}
 
-こんな感じ<br>
 SAMLのみ有効化しています
 
 ![cloudflare-access.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/591669/82091cd5-9470-121a-9e99-22a4add2f6d5.png){.h-[18rem].mx-auto}
@@ -106,16 +111,22 @@ SAMLのみ有効化しています
 
 ---
 
-## 注意点
+## 注意点{.flex.flex-col.items-center.text-center.justify-center.h-[100dvh]}
 
-便利ですが難点か注意点があります
+---
 
-- Pagesの設定でアクセス制限を有効にしても、本番環境の.pages.devドメインには認証がかかりません
-  - 手動で認証対象に本番環境を含める必要があります
-  - 初期状態では一番上のワイルドカードサブドメインのみ対象になっているはずです
-  - 2番目のサブドメイン指定なしの設定が必要です
+## 本番環境の.pages.devは対象外
+
+- デフォルトでは本番環境の.pages.devドメインは認証の対象外
+  - 手動で認証対象に本番環境を含める必要があり
+  - 初期状態では一番上のワイルドカードサブドメインのみ対象になっている
+  - 2番目のサブドメイン指定なしの設定が必要しましょう
 
 ![スクリーンショット 2024-03-28 14.46.52.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/591669/654abb09-365e-c387-7f12-5baa1647103b.png){.h-[8rem].mx-auto}
+
+---
+
+## いきなりデプロイされちゃった
 
 - GitHub連携するといきなりデプロイが始まるので、アクセス制限を掛ける前に公開されてしまう
   - ビルドをわざと失敗させる（ビルドコマンドを適当に設定するなど）など、工夫が必要
@@ -133,11 +144,17 @@ SAMLのみ有効化しています
 
 ---
 
-## 認証方法のおすすめ
+## 認証方法のオススメ
 
-- 最初はメール認証で検証し、良さそうならSAML、OpenIDConnectの設定を行うのがおすすめです
+- 最初はメール認証がオススメ
+- 本格的に運用するならSAML、OpenIDConnect
 
-- AWSのIdentify CenterやCognito、GMOトラスト・ログイン、Auth0など、個人 or 少人数であれば非常に安価でSAML、OpenIDConnetを提供するサービスもあるので、連携しておくと幸せになれます
+- 個人開発で使うなら…
+  - AWSのIdentify Center
+  - Cognito
+  - GMOトラスト・ログイン
+  - Auth0
+  - etc...
 
 ---
 
