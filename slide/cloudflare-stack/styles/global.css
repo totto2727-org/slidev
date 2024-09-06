@@ -82,14 +82,19 @@ body {
   a {
     @apply text-blue-400 underline underline-offset-[0.2em] hover:text-blue-600;
   }
+}
 
-  tamu {
-    /* らぷり公式サイトから */
-    color: #ffed70;
-  }
+.inline-img {
+  @apply max-w-none max-h-1lh w-auto h-1lh object-contain inline-block
+    vertical-bottom;
+}
 
-  nakutya {
-    /* らぷり公式サイトから */
-    color: #9adcff;
-  }
+tamu {
+  /* らぷり公式サイトから */
+  color: #ffed70;
+}
+
+nakutya {
+  /* らぷり公式サイトから */
+  color: #9adcff;
 }

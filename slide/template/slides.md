@@ -15,7 +15,7 @@ drawings:
 
 # Cloudflareを使い倒す!
 
-**とっと / :inline-img{src="/YUMEMI_yoko_WH_08.svg" alt="株式会社ゆめみ"}**{class="opacity-100"}
+**とっと / ![株式会社ゆめみ](/YUMEMI_yoko_WH_08.svg){.inline-img}**{.opacity-100}
 
 ---
 
@@ -24,7 +24,7 @@ drawings:
 :::div{class="grid grid-cols-[auto_1fr] items-between"}
 
 - ニックネーム：**とっと**
-- 所属： :inline-img{src="/YUMEMI_yoko_WH_08.svg" alt="株式会社ゆめみ"}
+- 所属： ![/YUMEMI_yoko_WH_08.svg](/YUMEMI_yoko_WH_08.svg){.inline-img}
 - 職種：フロントエンドエンジニア
 - 推しFW：**Remix**, **Astro**
 - 推し：<tamu>棗いつき</tamu> <nakutya>藍月なくる</nakutya>
