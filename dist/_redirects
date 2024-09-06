@@ -1,3 +1,4 @@
 /cloudflare-stack/* /cloudflare-stack/index.html 200
 /template/* /template/index.html 200
+/cloudflare-pages-with-access/* /cloudflare-pages-with-access/index.html 200
 / /cloudflare-stack/index.html 200

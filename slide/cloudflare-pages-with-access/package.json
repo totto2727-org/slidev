@@ -1,0 +1,10 @@
+{
+  "name": "cloudflare-pages-with-access",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build --base /cloudflare-pages-with-access/ --out ../../dist/cloudflare-pages-with-access",
+    "export": "slidev export --dark --output ../../dist/pdf/cloudflare-pages-with-access.pdf"
+  }
+}
