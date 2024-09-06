@@ -1,0 +1,45 @@
+{
+  "name": "slidev-theme-geist",
+  "version": "0.8.1",
+  "homepage": "https://github.com/nico-bachner/slidev-theme-geist#readme",
+  "bugs": {
+    "url": "https://github.com/nico-bachner/slidev-theme-geist/issues"
+  },
+  "author": {
+    "name": "Nico Bachner",
+    "email": "yo@nicob.dev",
+    "url": "https://nicob.dev/"
+  },
+  "license": "MIT",
+  "keywords": [
+    "slidev-theme",
+    "slidev"
+  ],
+  "engines": {
+    "node": ">=14",
+    "slidev": ">=0.20"
+  },
+  "slidev": {
+    "aspectRatio": "16/9",
+    "colorSchema": "dark",
+    "highlighter": "all",
+    "default": {
+      "highlighter": "shiki"
+    }
+  },
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build --base /slidev-theme-geist/ --out ../../dist/slidev-theme-geist",
+    "export": "slidev export --dark --output ../../dist/pdf/slidev-theme-geist.pdf",
+    "screenshot": "slidev export --format png",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs"
+  },
+  "dependencies": {
+    "codemirror-theme-vars": "^0.1.1",
+    "prism-theme-vars": "^0.2.2"
+  },
+  "devDependencies": {
+    "vitepress": "^0.22.3"
+  }
+}

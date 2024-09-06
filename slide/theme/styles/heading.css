@@ -1,0 +1,30 @@
+h1 {
+  @apply text-6xl;
+
+  color: var(--geist-foreground);
+  font-weight: 800;
+  margin: 3rem 0 1rem;
+}
+
+h2 {
+  @apply text-5xl my-10;
+
+  color: var(--geist-foreground);
+  font-weight: 700;
+}
+
+h3 {
+  @apply text-2xl;
+
+  color: var(--geist-foreground);
+  font-weight: 600;
+  margin: 2rem 0 1rem;
+}
+
+h4 {
+  @apply text-xl;
+
+  color: var(--geist-foreground);
+  font-weight: 500;
+  margin: 1.5rem 0 1rem;
+}

@@ -1,0 +1,51 @@
+table {
+  @apply my-4;
+
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+}
+
+tr {
+  height: var(--geist-gap-double);
+}
+
+th,
+td {
+  vertical-align: middle;
+}
+
+thead > tr {
+  height: 40px;
+}
+
+th {
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+  color: var(--accents-5);
+  background: var(--accents-1);
+  padding: 0 var(--geist-gap-half);
+  border-top: 1px solid var(--accents-2);
+  border-bottom: 1px solid var(--accents-2);
+}
+
+th:first-child {
+  border-left: 1px solid var(--accents-2);
+  border-radius: var(--geist-radius) 0 0 var(--geist-radius);
+}
+
+th:last-child {
+  border-right: 1px solid var(--accents-2);
+  border-radius: 0 var(--geist-radius) var(--geist-radius) 0;
+}
+
+td {
+  color: var(--accents-6);
+  padding: var(--geist-gap-quarter) var(--geist-gap-half);
+}
+
+tr:not(:last-of-type) td {
+  border-bottom: 1px solid var(--accents-2);
+}

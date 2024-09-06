@@ -1,0 +1,14 @@
+.inline-img {
+  @apply max-w-none max-h-1lh w-auto h-1lh object-contain inline-block
+    vertical-bottom;
+}
+
+tamu {
+  /* らぷり公式サイトから */
+  color: #ffed70;
+}
+
+nakutya {
+  /* らぷり公式サイトから */
+  color: #9adcff;
+}

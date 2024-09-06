@@ -1,0 +1,41 @@
+body {
+  @apply text-2xl;
+}
+
+a {
+  @apply text-blue-400 underline underline-offset-[0.2em] hover:text-blue-600;
+}
+
+p {
+  margin: 1rem 0;
+  @apply leading-relaxed;
+}
+
+strong {
+  color: var(--accents-7);
+}
+
+ol,
+ul {
+  @apply list-inside;
+}
+
+ol {
+  @apply list-decimal;
+}
+
+ul {
+  @apply list-disc;
+}
+
+li {
+  @apply my-2;
+}
+
+li > :is(ul, ol) {
+  @apply ml-10;
+}
+
+li > p {
+  @apply inline;
+}
