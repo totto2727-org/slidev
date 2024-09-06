@@ -38,7 +38,7 @@ drawings:
 
 ## Cloudflareはいいぞ{class="text-center text-6xl mt-35 font-normal text-orange-300"}
 
-:::li{class="grid grid-cols-3 list-none justify-around text-center text-[4em]"}
+:::div{class="grid grid-cols-3 list-none justify-around text-center text-[4em]"}
 
 **早い**
 

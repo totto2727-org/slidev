@@ -17,7 +17,8 @@
   --slidev-theme-primary: var(--geist-foreground);
 }
 
-html.light {
+/* 使用しないため */
+/* html.light {
   --geist-background: #fff;
   --accents-1: #fafafa;
   --accents-2: #eaeaea;
@@ -28,19 +29,67 @@ html.light {
   --accents-7: #333;
   --accents-8: #111;
   --geist-foreground: #000;
-}
+} */
 
 html.dark {
-  --geist-background: #000;
-  --accents-1: #111;
-  --accents-2: #333;
-  --accents-3: #444;
-  --accents-4: #666;
-  --accents-5: #888;
-  --accents-6: #999;
-  --accents-7: #eaeaea;
-  --accents-8: #fafafa;
-  --geist-foreground: #fff;
+  --geist-background: oklch(from #1f1f1f l c h);
+  --accents-1: oklch(
+    from
+    var(--geist-background)
+    calc(l + (100% - l) / 9 * 1)
+    c
+    h
+  );
+  --accents-2: oklch(
+    from
+    var(--geist-background)
+    calc(l + (100% - l) / 9 * 2)
+    c
+    h
+  );
+  --accents-3: oklch(
+    from
+    var(--geist-background)
+    calc(l + (100% - l) / 9 * 3)
+    c
+    h
+  );
+  --accents-4: oklch(
+    from
+    var(--geist-background)
+    calc(l + (100% - l) / 9 * 4)
+    c
+    h
+  );
+  --accents-5: oklch(
+    from
+    var(--geist-background)
+    calc(l + (100% - l) / 9 * 5)
+    c
+    h
+  );
+  --accents-6: oklch(
+    from
+    var(--geist-background)
+    calc(l + (100% - l) / 9 * 6)
+    c
+    h
+  );
+  --accents-7: oklch(
+    from
+    var(--geist-background)
+    calc(l + (100% - l) / 9 * 7)
+    c
+    h
+  );
+  --accents-8: oklch(
+    from
+    var(--geist-background)
+    calc(l + (100% - l) / 9 * 8)
+    c
+    h
+  );
+  --geist-foreground: oklch(from var(--geist-background) 100% c h);
 }
 
 #slide-content {
