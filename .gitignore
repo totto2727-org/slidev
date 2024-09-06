@@ -1,7 +1,7 @@
+dist/
+!dist/_redirects
 node_modules/
 .DS_Store
-dist/
-!dist/_route.json
 *.local
 .vite-inspect
 .remote-assets
