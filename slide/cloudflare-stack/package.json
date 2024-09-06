@@ -1,0 +1,10 @@
+{
+  "name": "cloudflare-stack",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build --base /cloudflare-stack/ --out ../../dist/cloudflare-stack",
+    "export": "slidev export --dark --output ../../dist/pdf/cloudflare-stack.pdf"
+  }
+}
