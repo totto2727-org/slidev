@@ -1,13 +1,17 @@
 ---
 title: Cloudflareを使い倒す！
+author: '@totto2727'
 favicon: 'https://cdn.jsdelivr.net/gh/slidevjs/slidev/assets/favicon.png'
+htmlAttrs:
+  lang: ja
+# Theme
 theme: geist
-colorSchema: 'dark'
 fonts:
   sans: "M PLUS 2"
   mono: "M PLUS 1 Code"
-lineNumbers: true
 transition: slide-left
+lineNumbers: true
+# Feature
 mdc: true
 drawings:
   persist: false
@@ -152,7 +156,7 @@ class: "m-1vw"
 
 ## RPCモードのサンプルコード{class="text-center"}
 
-::div{class="grid grid-cols-[auto_auto] gap-4 font-mono"}
+::div{class="grid grid-cols-[auto_auto] gap-4"}
 
 ```ts
 // worker1.ts

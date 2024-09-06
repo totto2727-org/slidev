@@ -1,13 +1,17 @@
 ---
 title: template
+author: '@totto2727'
 favicon: 'https://cdn.jsdelivr.net/gh/slidevjs/slidev/assets/favicon.png'
+htmlAttrs:
+  lang: ja
+# Theme
 theme: geist
-colorSchema: 'dark'
 fonts:
   sans: "M PLUS 2"
   mono: "M PLUS 1 Code"
-lineNumbers: true
 transition: slide-left
+lineNumbers: true
+# Feature
 mdc: true
 drawings:
   persist: false
