@@ -35,5 +35,6 @@
   "[yaml]": {
     "editor.defaultFormatter": "dprint.dprint"
   },
-  "slidev.force-enabled": true
+  "slidev.force-enabled": true,
+  "slidev.port": 3030
 }
