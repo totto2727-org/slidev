@@ -3,6 +3,7 @@
     "vue.volar",
     "dprint.dprint",
     "antfu.slidev",
-    "sissel.netlify-redirects"
+    "sissel.netlify-redirects",
+    "antfu.unocss"
   ]
 }

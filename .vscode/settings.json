@@ -34,5 +34,6 @@
   },
   "[yaml]": {
     "editor.defaultFormatter": "dprint.dprint"
-  }
+  },
+  "slidev.force-enabled": true
 }
