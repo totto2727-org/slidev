@@ -9,7 +9,6 @@ fonts:
 lineNumbers: true
 transition: slide-left
 mdc: true
-download: true
 drawings:
   persist: false
 ---
