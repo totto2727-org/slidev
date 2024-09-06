@@ -34,7 +34,7 @@ drawings:
 - 推し：<tamu>棗いつき</tamu> <nakutya>藍月なくる</nakutya>
   - [布教用Playlist](https://music.youtube.com/playlist?list=PLou8tAEUf2ouel_LDAvj5fMi6Kzb2EYfM&si=yBpASHEsVbyDM-UM)
 
-![とっとのアイコン](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8jkLUdX62rBSF0DpJbWNxeUnEqmwHsy-L0FYI_DfF7Hbv8i74385AGc5wY57nVD8LKVjh_RC1FapEinm4tcGdr5SAtjxTNAb2oPMT8fF-TjDtreQIF5zLX8PyqSsR8SSmN7qdGMvartw/s800/character_program_shutdown.png)
+![とっとのアイコン](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8jkLUdX62rBSF0DpJbWNxeUnEqmwHsy-L0FYI_DfF7Hbv8i74385AGc5wY57nVD8LKVjh_RC1FapEinm4tcGdr5SAtjxTNAb2oPMT8fF-TjDtreQIF5zLX8PyqSsR8SSmN7qdGMvartw/s800/character_program_shutdown.png){.w-[20rem].mx-auto}
 
 :::
 
@@ -110,8 +110,10 @@ SAMLのみ有効化しています
 ::
 
 ---
+class: text-center flex flex-col items-center justify-center h-full m-0
+---
 
-## 注意点{.flex.flex-col.items-center.text-center.justify-center.h-[100dvh]}
+## 注意点
 
 ---
 
@@ -119,8 +121,8 @@ SAMLのみ有効化しています
 
 - デフォルトでは本番環境の.pages.devドメインは認証の対象外
   - 手動で認証対象に本番環境を含める必要があり
-  - 初期状態では一番上のワイルドカードサブドメインのみ対象になっている
-  - 2番目のサブドメイン指定なしの設定が必要しましょう
+  - 初期状態では一番上のワイルドカードサブドメインのみ対象
+  - 2番目のサブドメイン指定なしを追加しましょう
 
 ![スクリーンショット 2024-03-28 14.46.52.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/591669/654abb09-365e-c387-7f12-5baa1647103b.png){.h-[8rem].mx-auto}
 
@@ -128,9 +130,10 @@ SAMLのみ有効化しています
 
 ## いきなりデプロイされちゃった
 
-- GitHub連携するといきなりデプロイが始まるので、アクセス制限を掛ける前に公開されてしまう
-  - ビルドをわざと失敗させる（ビルドコマンドを適当に設定するなど）など、工夫が必要
-- Zipで公開する場合も空Zipを渡すと言った工夫をしたほうがいいでしょう
+- GitHub連携するといきなりデプロイが始まる
+  - アクセス制限を掛ける前に公開されてしまう恐れ
+- ビルドをわざと失敗させるなど、工夫が必要
+  - Zipで公開する場合も空Zipを渡すと言った工夫が必要
 
 ---
 
@@ -161,6 +164,8 @@ SAMLのみ有効化しています
 ## 最後に
 
 - Cloudflareはいいぞ
-- 設定が容易でかつ、（SAMLやOpenIDConnect提供側が対応していれば）MFAも絡めて認証できるため、非常にセキュアに共有する事ができます
-- 本記事のスコープから外れているため省略しましたが、Cloudflare Pagesも非常に魅力的なサービスです
-  - サーバサイドも行けるし、ホスティングの費用がほぼかからない！
+- 設定が容易でセキュアに共有可能
+
+Cloudflare Pagesも魅力的なサービスです
+
+サーバサイドも行けるし、ホスティングの費用がほぼかからない！
