@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@slidev/cli": "^0.49.29",
-    "@slidev/theme-seriph": "latest",
+    "slidev-theme-geist": "^0.8.1",
     "vue": "^3.4.38"
   },
   "devDependencies": {

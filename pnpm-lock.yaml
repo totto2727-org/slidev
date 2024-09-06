@@ -11,9 +11,9 @@ importers:
       '@slidev/cli':
         specifier: ^0.49.29
         version: 0.49.29(@babel/parser@7.25.6)(@nuxt/kit@3.13.1(rollup@4.21.2))(@types/markdown-it@14.1.2)(@types/node@18.19.50)(@vue/compiler-sfc@3.5.2)(playwright-chromium@1.46.1)(postcss@8.4.45)(rollup@4.21.2)(sass-embedded@1.78.0)
-      '@slidev/theme-seriph':
-        specifier: latest
-        version: 0.25.0
+      slidev-theme-geist:
+        specifier: ^0.8.1
+        version: 0.8.1
       vue:
         specifier: ^3.4.38
         version: 3.5.2(typescript@5.5.4)
@@ -25,11 +25,7 @@ importers:
         specifier: ^1.46.1
         version: 1.46.1
 
-  slide/slide1:
-    dependencies:
-      slidev-theme-geist:
-        specifier: ^0.8.1
-        version: 0.8.1
+  slide/slide1: {}
 
   slide/template: {}
 
@@ -767,17 +763,9 @@ packages:
   '@slidev/rough-notation@0.1.0':
     resolution: {integrity: sha512-a/CbVmjuoO3E4JbUr2HOTsXndbcrdLWOM+ajbSQIY3gmLFzhjeXHGksGcp1NZ08pJjLZyTCxfz1C7v/ltJqycA==}
 
-  '@slidev/theme-seriph@0.25.0':
-    resolution: {integrity: sha512-PnFQbn4I70+/cVie5iAr0Im6sYvnwjkO7Yj5KonTyJZFFJFytckLTrD3ijft/J4cRnz7OmSzTyQKNX1FN/x0YQ==}
-    engines: {node: '>=14.0.0', slidev: '>=v0.47.0'}
-
   '@slidev/types@0.28.10':
     resolution: {integrity: sha512-XcJ12giBaeSHxImlYuDfO1XW686kWDq4uoftnPZyIxhNew4FREsbOLY8oG5Nz5qn05qSsnSDQGo55EbantKvfg==}
     engines: {node: '>=14.0.0'}
-
-  '@slidev/types@0.47.5':
-    resolution: {integrity: sha512-X67V4cCgM0Sz50bP8GbVzmiL8DHC2IXvdKcsN7DlxHyf+/T4d9GveeGukwha5Fx3MuYeGZWKag7TFL2ZY4w54A==}
-    engines: {node: '>=18.0.0'}
 
   '@slidev/types@0.49.29':
     resolution: {integrity: sha512-xfUcW+zcZU/vzd4WMkZxnAbZbdI0faOPll1A0viXHqR8BlQhZxBV49kCreGl8NK4kd/+oJ/kM5gOXCwDQve0RQ==}
@@ -3902,15 +3890,7 @@ snapshots:
     dependencies:
       roughjs: 4.6.6
 
-  '@slidev/theme-seriph@0.25.0':
-    dependencies:
-      '@slidev/types': 0.47.5
-      codemirror-theme-vars: 0.1.2
-      prism-theme-vars: 0.2.5
-
   '@slidev/types@0.28.10': {}
-
-  '@slidev/types@0.47.5': {}
 
   '@slidev/types@0.49.29(@nuxt/kit@3.13.1(rollup@4.21.2))(@vue/compiler-sfc@3.5.2)(postcss@8.4.45)(rollup@4.21.2)(typescript@5.5.4)(vite@5.4.3(@types/node@18.19.50)(sass-embedded@1.78.0))':
     dependencies:
