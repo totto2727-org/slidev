@@ -1,5 +1,5 @@
 ---
-title: Cloudflareを使い倒す！
+title: template
 favicon: 'https://cdn.jsdelivr.net/gh/slidevjs/slidev/assets/favicon.png'
 theme: geist
 colorSchema: 'dark'
@@ -13,7 +13,7 @@ drawings:
   persist: false
 ---
 
-# Cloudflareを使い倒す!
+# template
 
 **とっと / ![株式会社ゆめみ](/YUMEMI_yoko_WH_08.svg){.inline-img}**{.opacity-100}
 
