@@ -20,16 +20,15 @@
 
 code,
 code * {
-  @apply select-text;
-}
-code {
-  font-family: "Fira Code", monospace;
+  --at-apply: select-text;
 }
 
 :not(pre) > code {
+  --at-apply: text-sm;
+
   color: var(--geist-highlight-purple);
-  @apply text-sm;
 }
+
 :not(pre) > code:before,
 :not(pre) > code:after {
   content: "`";

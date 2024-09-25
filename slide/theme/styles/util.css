@@ -1,5 +1,5 @@
 .inline-img {
-  @apply max-w-none max-h-1lh w-auto h-1lh object-contain inline-block
+  --at-apply: max-w-none max-h-1lh w-auto h-1lh object-contain inline-block
     vertical-bottom;
 }
 

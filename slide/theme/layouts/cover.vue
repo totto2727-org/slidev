@@ -8,14 +8,14 @@
 
 <style>
 .cover {
-  @apply h-full flex flex-col justify-center items-center text-center;
+  --at-apply: h-full flex flex-col justify-center items-center text-center;
 }
 
 .cover h1 {
-  @apply text-6xl leading-[1.1];
+  --at-apply: text-6xl leading-[1.1];
 }
 
 .cover h1 + p {
-  @apply text-2xl mt-2 opacity-80;
+  --at-apply: text-2xl mt-2 opacity-80;
 }
 </style>

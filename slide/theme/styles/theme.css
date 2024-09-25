@@ -17,6 +17,7 @@
   --slidev-theme-primary: var(--geist-foreground);
 }
 
+/* unused */
 html.light {
   --geist-background: #fff;
   --accents-1: #fafafa;
@@ -92,7 +93,7 @@ html.dark {
 }
 
 #slide-content {
-  @apply antialiased;
+  --at-apply: antialiased;
 
   color: var(--geist-foreground);
   background-color: var(--geist-background);
@@ -111,9 +112,9 @@ html.dark {
 }
 
 .slidev-layout {
-  @apply mx-5vw mb-[2.5vw];
+  --at-apply: "mx-[var(--slidev-layout-mx,5vw)] mb-[2.5vw]";
 }
 
 * {
-  @apply select-none;
+  --at-apply: select-none;
 }

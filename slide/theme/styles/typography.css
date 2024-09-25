@@ -1,14 +1,16 @@
 body {
-  @apply text-2xl;
+  --at-apply: text-2xl;
 }
 
 a {
-  @apply text-blue-400 underline underline-offset-[0.2em] hover:text-blue-600;
+  --at-apply: text-blue-400 underline underline-offset-[0.2em]
+    hover:text-blue-600;
 }
 
 p {
+  --at-apply: leading-relaxed;
+
   margin: 1rem 0;
-  @apply leading-relaxed;
 }
 
 strong {
@@ -17,25 +19,25 @@ strong {
 
 ol,
 ul {
-  @apply list-inside;
+  --at-apply: list-inside;
 }
 
 ol {
-  @apply list-decimal;
+  --at-apply: list-decimal;
 }
 
 ul {
-  @apply list-disc;
+  --at-apply: list-disc;
 }
 
 li {
-  @apply my-2;
+  --at-apply: my-2;
 }
 
 li > :is(ul, ol) {
-  @apply ml-10;
+  --at-apply: ml-10;
 }
 
 li > p {
-  @apply inline;
+  --at-apply: inline;
 }

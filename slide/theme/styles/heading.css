@@ -1,5 +1,5 @@
 h1 {
-  @apply text-6xl;
+  --at-apply: text-6xl;
 
   color: var(--geist-foreground);
   font-weight: 800;
@@ -9,7 +9,7 @@ h1 {
 }
 
 h2 {
-  @apply text-5xl my-10;
+  --at-apply: text-5xl my-10;
 
   color: var(--geist-foreground);
   font-weight: 700;
@@ -17,7 +17,7 @@ h2 {
 }
 
 h3 {
-  @apply text-2xl;
+  --at-apply: text-2xl;
 
   color: var(--geist-foreground);
   font-weight: 600;
@@ -25,7 +25,7 @@ h3 {
 }
 
 h4 {
-  @apply text-xl;
+  --at-apply: text-xl;
 
   color: var(--geist-foreground);
   font-weight: 500;

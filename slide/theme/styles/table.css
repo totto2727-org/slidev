@@ -1,5 +1,5 @@
 table {
-  @apply my-4;
+  --at-apply: my-4;
 
   border-collapse: separate;
   border-spacing: 0;
