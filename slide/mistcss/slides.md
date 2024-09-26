@@ -358,3 +358,9 @@ export const lightningcssVisitorScope = composeVisitors([
 - 現状案件に導入するのは難しい
 - ただ、デザインシステムを構築してための方針としては、筋が良さそう
 - 今後も積極的にコミットしていつか案件で使いたい
+
+色々試した結果
+
+<https://github.com/totto2727-org/astro>
+
+<https://github.com/totto2727/mistcss>
