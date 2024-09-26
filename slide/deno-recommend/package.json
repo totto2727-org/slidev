@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "slidev --open",
-    "build": "slidev build --base /template/ --out ../../dist/deno-recommend",
+    "build": "slidev build --base /deno-recommend/ --out ../../dist/deno-recommend",
     "export": "slidev export --dark --output ../../dist/pdf/deno-recommend.pdf"
   }
 }
