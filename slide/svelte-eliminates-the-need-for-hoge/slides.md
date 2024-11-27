@@ -295,4 +295,16 @@ revalidateなどが不要であればこれで十分
 
 真なるリアクティブ
 
-https://speakerdeck.com/ssssota/the-next-chapter-of-declarative-ui
+<https://speakerdeck.com/ssssota/the-next-chapter-of-declarative-ui>
+
+---
+
+## 最後に
+
+- SvelteはWeb開発に必要なものを標準で揃えているイメージ
+  - Reactでちょっと欲しくユーティリティが標準機能としてあるような印象
+  - 小さいアプリならReactより少ない依存で解決できる気がする
+- Svelte v5のRuneでReactに近い書き心地になっている
+  - 今までHookのような定義は少し癖があった
+- 学習コストはそんな高くない（ライフサイクルも素直）
+- Svelte kitはまだあまり触れていないが、仕組み自体はかなりシンプル
