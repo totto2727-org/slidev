@@ -36,5 +36,12 @@
     "editor.defaultFormatter": "dprint.dprint"
   },
   "slidev.force-enabled": true,
-  "slidev.port": 3030
+  "slidev.port": 3030,
+  "cSpell.words": [
+    "aspida",
+    "hoge",
+    "nakutya",
+    "tamu",
+    "YUMEMI"
+  ]
 }

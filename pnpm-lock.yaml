@@ -32,6 +32,10 @@ importers:
 
   slide/cloudflare-stack: {}
 
+  slide/deno-recommend: {}
+
+  slide/mistcss: {}
+
   slide/template: {}
 
   slide/theme:
