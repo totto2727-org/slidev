@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "slidev --open",
-    "build": "slidev build --base /svelte-eliminates-the-need-for-hog/ --out ../../dist/template",
-    "export": "slidev export --dark --output ../../dist/pdf/svelte-eliminates-the-need-for-hog.pdf"
+    "build": "slidev build --base /svelte-eliminates-the-need-for-hoge/ --out ../../dist/svelte-eliminates-the-need-for-hoge",
+    "export": "slidev export --dark --output ../../dist/pdf/svelte-eliminates-the-need-for-hoge.pdf"
   }
 }
